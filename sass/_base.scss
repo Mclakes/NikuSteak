@@ -1,0 +1,28 @@
+$color-primary: #7B0606;
+$color-background: #FFE9E099;
+$color-black: #000;
+$color-white: #fff;
+$color-background-2: #97351f;
+$color-background-3: #170606;
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    background-color: $color-white;
+}
+
+.container {
+    display: grid;
+
+    grid-template-rows: 48rem max-content 40rem max-content max-content max-content 40rem max-content 40rem;
+
+    grid-template-columns: [left-border-start] minmax(2rem, 10rem) [left-border-end center-start] repeat(6, [col-start] minmax(6rem, 1fr) [col-end] ) [center-end right-border-start] minmax(2rem, 10rem) [right-border-end] ;
+}

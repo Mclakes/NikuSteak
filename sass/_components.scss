@@ -1,0 +1,38 @@
+.btn{
+    color: $color-white;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+.btn_primary {
+    background-color: $color-primary;
+}
+
+.i_b {
+    display: inline-block;
+}
+
+.btn_glass {
+    background-image: linear-gradient(to right, rgba($color-primary, 0.3), rgba($color-primary, .3));
+    // filter: blur(1px) brightness(100%);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    border: 2px solid rgba($color-white,.3);
+}
+.btn_news {
+    background-color: $color-primary;
+    padding: 2rem 4rem;
+    color: white;
+    border: none;
+    transform: translate(-4rem);
+
+}
+.mr{
+    margin-right: 2rem;
+}
+.homely {
+    color: $color-primary;
+    transform: scale(1.3);
+    font-weight: 800;
+}
